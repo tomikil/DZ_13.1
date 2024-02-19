@@ -2,9 +2,6 @@ import json
 
 
 class Category:
-    name: str
-    description: str
-    product: list
     quantity_category = 0
     quantity_unique_products = 0
 
@@ -13,18 +10,10 @@ class Category:
         self.description = description
         self.product = product
         Category.quantity_category += 1
-
-    def quantity_products(self):
         Category.quantity_unique_products = len(self.product)
-        return Category.quantity_unique_products
 
 
 class Product:
-    name: str
-    description: str
-    price: float
-    quantity: int
-
     def __init__(self, name, description, price, quantity):
         self.name = name
         self.description = description
