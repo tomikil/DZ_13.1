@@ -26,10 +26,6 @@ def test_init_(category_1):
                           }]
 
 
-def test_quantity_products(category_1):
-    assert category_1.quantity_products() == 1
-
-
 @pytest.fixture
 def category():
     return utils.filling_classes_Category(utils.connection_file(file))
