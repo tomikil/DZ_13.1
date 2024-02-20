@@ -10,7 +10,7 @@ class Category:
         self.description = description
         self.product = product
         Category.quantity_category += 1
-        Category.quantity_unique_products = len(self.product)
+        Category.quantity_unique_products += len(self.product)
 
 
 class Product:
@@ -19,6 +19,8 @@ class Product:
         self.description = description
         self.price = price
         self.quantity = quantity
+
+
 
 
 def connection_file(f):
